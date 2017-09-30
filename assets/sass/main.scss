@@ -547,27 +547,36 @@
             border-radius: 4px;
             padding: 8px;
             background-color: rgba(109, 146, 160, 0.2);
+            transition: background-color $transition-time ease;
 
-            &.tw {
-                margin-right: 10px; 
-
-                svg {
-                    fill: #1DA1F2;
-                }
-                
+            &:first-child {
+                margin-right: 10px;
             }
-            
-            &.gt {
-                margin-left: 10px;
 
-                svg {
-                    fill: #181717;
+            &:last-child {
+                margin-left: 10px;
+            }
+
+            &:hover {
+                background-color: rgba(109, 146, 160, 0.4);
+
+                &.tw {
+                    svg {
+                        fill: #1DA1F2;
+                    }
+                }
+
+                &.gt {
+                    svg {
+                        fill: #181717;
+                    }
                 }
             }
 
             svg {
                 width: 100%;
                 height: 100%;
+                fill: $txt-cl;
             }
         }
     }
