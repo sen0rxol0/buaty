@@ -7,6 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sen0rxol0 <sen0rxol0@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sen0rxol0/buaty.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
