@@ -1,2 +1,2 @@
 # buaty
-One page website template
+One page website proof of concept template

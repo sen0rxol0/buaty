@@ -1,13 +1,13 @@
 {
   "name": "buaty",
   "version": "1.0.0",
-  "description": "A one page template made to be responsive and just a prof of concept",
+  "description": "A one page template made to be responsive and just a proof of concept",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sen0rxol0 <sen0rxol0@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "cssnano": "^3.10.0",
