@@ -30,6 +30,10 @@
             }
         };
 
+        if (window.scrollY > rect.height) {
+            header.classList.add('active-scroll');
+        }
+
         window.addEventListener('scroll', onScroll);
     }
       
