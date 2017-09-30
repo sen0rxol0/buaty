@@ -541,9 +541,12 @@
         flex-flow: row wrap;
 
         .external-link {
-            width: 24px;
-            height: 24px;
+            width: 36px;
+            height: 36px;
             margin: 12px auto 0;
+            border-radius: 4px;
+            padding: 8px;
+            background-color: rgba(109, 146, 160, 0.2);
 
             &.tw {
                 margin-right: 10px; 
@@ -753,9 +756,7 @@
             margin-left: 50px;
 
             .external-link {
-                width: 24px;
-                height: 24px;
-                margin: 12px 10px 0 0; 
+                margin: 0 10px 0; 
             }
         }
 
