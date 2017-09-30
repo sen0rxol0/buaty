@@ -1,7 +1,7 @@
 {
-  "name": "reslayout",
+  "name": "buaty",
   "version": "1.0.0",
-  "description": "Site one page juste pour pratiquer la conception responsive, sass et entre autres.",
+  "description": "A one page template made to be responsive and just a prof of concept",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
