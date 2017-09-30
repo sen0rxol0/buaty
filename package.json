@@ -1,0 +1,19 @@
+{
+  "name": "reslayout",
+  "version": "1.0.0",
+  "description": "Site one page juste pour pratiquer la conception responsive, sass et entre autres.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sen0rxol0 <sen0rxol0@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
+}
