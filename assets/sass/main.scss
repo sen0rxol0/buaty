@@ -143,7 +143,7 @@
     width: 100%;
     height: 80vh;
     max-height: 800px;
-    padding-top: 120px;
+    padding-top: 60px;
     background-image: url("../images/bg-hero.png");
     background-repeat: repeat;
     background-position: center center;
@@ -612,6 +612,10 @@
 }
 
 @media screen and (min-width: 480px) {
+
+    .hero {
+        padding-top: 120px; 
+    }
 
     .team-wrapper {
         flex-flow: column nowrap;

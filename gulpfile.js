@@ -6,6 +6,29 @@ const gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     sourcemaps   = require('gulp-sourcemaps'),
     cssnano = require('cssnano');
+
+
+
+// const babel = require('gulp-babel'),
+//     babili = require('gulp-babili'),
+//     concat = require('gulp-concat');
+
+gulp.task('js', () =>
+    gulp.src('assets/js/*.js')
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['env'],
+            comments: false
+        }))
+        .pipe(concat('all.js'))
+        .pipe(babili({
+            mangle: {
+            keepClassName: true
+        }
+        }))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('assets/js/dist'))
+);
     
 gulp.task('sass', function () {
     var plugins = [
