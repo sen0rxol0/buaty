@@ -21,11 +21,9 @@
 
             if (window.scrollY > rect.height) {
                 header.classList.add('active-scroll');
-                // header.style.backgroundColor = '#022735';
             } else {
                 if (!header.classList.contains('extended')) {
                     header.classList.remove('active-scroll');
-                    // header.style.backgroundColor = 'none';
                 }
             }
         };
@@ -35,6 +33,27 @@
         }
 
         window.addEventListener('scroll', onScroll);
+    }
+
+    function revealsOnScroll() {
+        var els = document.querySelectorAll('*[data-reveal]');
+
+        var reveal = function () {
+            els.forEach(function(el, idx) {
+                var revealOn = el.offsetTop - (el.scrollHeight * 1.5);
+
+                if (revealOn < window.scrollY) {
+                    el.classList.add('revealed');
+                }
+
+                if (idx === els.length - 1 && el.classList.contains('revealed')) {
+                    window.removeEventListener('scroll', reveal);
+                    return;
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
     }
       
     function onClickScroll(ev) {
@@ -81,6 +100,7 @@
         if (document.readyState === 'complete') {
             togglesNav();
             headerChangesOnScroll();
+            revealsOnScroll();
 
             var links = document.querySelectorAll('a[href*="#"]');
 
