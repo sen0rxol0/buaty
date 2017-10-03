@@ -1,23 +1,23 @@
-(function() {
-    'use strict';
+(() => {
+'use strict';
 
     function togglesNav() {
-        var togglerBtn = document.querySelector('#navbar-toggler');
+        let togglerBtn = document.querySelector('#navbar-toggler');
 
-        function onToogleNav() {
+        let onToogleNav = function () {
             this.classList.toggle('toggled');
-            var mainHeader = document.querySelector('header.header-main');
-
+            let mainHeader = document.querySelector('header.header-main');
             mainHeader.classList.toggle('extended');
         }
+
         togglerBtn.addEventListener('click', onToogleNav);
     }
 
     function headerChangesOnScroll() {
-        var header = document.querySelector('header.header-main'),
+        let header = document.querySelector('header.header-main'),
             rect = header.getBoundingClientRect();
-
-        var onScroll = function(ev) {
+ 
+        let onScroll = function (ev) {
 
             if (window.scrollY > rect.height) {
                 header.classList.add('active-scroll');
@@ -36,11 +36,11 @@
     }
 
     function revealsOnScroll() {
-        var els = document.querySelectorAll('*[data-reveal]');
+        let els = document.querySelectorAll('*[data-reveal]');
 
-        var reveal = function () {
-            els.forEach(function(el, idx) {
-                var revealOn = el.offsetTop - (el.scrollHeight * 1.5);
+        let reveal = function () {
+            els.forEach((el, idx) => {
+                let revealOn = el.offsetTop - (el.scrollHeight * 1.5);
 
                 if (revealOn < window.scrollY) {
                     el.classList.add('revealed');
@@ -96,15 +96,15 @@
         scrollHorizontal(rootEl, rootEl.scrollTop, element.offsetTop, 0, 1/dur, 20, easeOutQuart);
     }
 
-    document.onreadystatechange = function () {
+    document.onreadystatechange = () => {
         if (document.readyState === 'complete') {
             togglesNav();
             headerChangesOnScroll();
             revealsOnScroll();
 
-            var links = document.querySelectorAll('a[href*="#"]');
+            let links = document.querySelectorAll('a[href*="#"]');
 
-            for(var i = 0; i < links.length; i++) {
+            for(let i = 0; i < links.length; i++) {
                 links[i].onclick = onClickScroll;
             }
         }
