@@ -2,23 +2,22 @@
 'use strict';
 
     function togglesNav() {
-        let togglerBtn = document.querySelector('#navbar-toggler');
+        const togglerBtn = document.querySelector('#navbar-toggler');
 
-        let onToogleNav = function () {
+        let onToggleNav = function () {
+            const mainHeader = document.querySelector('header.header-main');
             this.classList.toggle('toggled');
-            let mainHeader = document.querySelector('header.header-main');
             mainHeader.classList.toggle('extended');
         }
 
-        togglerBtn.addEventListener('click', onToogleNav);
+        togglerBtn.addEventListener('click', onToggleNav);
     }
 
     function headerChangesOnScroll() {
         let header = document.querySelector('header.header-main'),
             rect = header.getBoundingClientRect();
  
-        let onScroll = function (ev) {
-
+        let onScroll = () => {
             if (window.scrollY > rect.height) {
                 header.classList.add('active-scroll');
             } else {
@@ -40,13 +39,13 @@
 
         let reveal = function () {
             els.forEach((el, idx) => {
-                let revealOn = el.offsetTop - (el.scrollHeight * 1.5);
+                let revealOn = (window.scrollY + window.innerHeight) - (el.scrollHeight / 2);
 
-                if (revealOn < window.scrollY) {
+                if (revealOn > el.offsetTop) {
                     el.classList.add('revealed');
                 }
 
-                if (idx === els.length - 1 && el.classList.contains('revealed')) {
+                if (idx === (els.length - 1) && el.classList.contains('revealed')) {
                     window.removeEventListener('scroll', reveal);
                     return;
                 }
