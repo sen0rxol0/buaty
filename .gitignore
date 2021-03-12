@@ -1,4 +1,6 @@
-
+### macOS ###
+.DS_Store
+.LSOverride
 
 ### Node ###
 # Logs
