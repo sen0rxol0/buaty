@@ -1,6 +1,6 @@
 /**
 * COULEURS ?
-* principale: #49c18b color description : Moderate cyan - lime green.
+* principale: #49c18b, rgb(73,193,139) color description : Moderate cyan - lime green.
 * secondaire: #c14f49 color description : Moderate red.
 * textes:
 * 
@@ -19,6 +19,7 @@ body {
     background-color: #c14f49;
     display: flex;
     flex-flow: column nowrap; /* flex-direction et flex-wrap */
+    font-family: 'Cormorant Garamond', serif;
 }
 
 /***
@@ -26,7 +27,7 @@ body {
 */
 header.header-main {
     width: 100%;
-    background-color: #49c18b;
+    background-color: rgba(73,193,139,.6);
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -106,3 +107,53 @@ header.header-main.nav-active {
 /***
 * FIN HEADER
 */
+
+/***
+* MAIN
+*/
+
+main.container-main {
+    /* height: ; */
+    /* padding: 0 128px; */
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 64px);
+    padding: 0 8px;
+    padding-top: 64px;
+    background-image: url('/assets/images/herobg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.hero h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-family: 'Cormorant Unicase', serif;
+    text-align: center;
+}
+
+.hero h3 {
+    margin-top: 4em;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+.hero a {
+    text-decoration: none;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media (min-width: 860px) {
+    .hero {
+        padding: 128px 128px 0;
+    }
+
+}
+
+
