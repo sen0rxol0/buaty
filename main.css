@@ -1,0 +1,108 @@
+/**
+* COULEURS ?
+* principale: #49c18b color description : Moderate cyan - lime green.
+* secondaire: #c14f49 color description : Moderate red.
+* textes:
+* 
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+:root { /* autrement dit html */
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #c14f49;
+    display: flex;
+    flex-flow: column nowrap; /* flex-direction et flex-wrap */
+}
+
+/***
+* HEADER
+*/
+header.header-main {
+    width: 100%;
+    background-color: #49c18b;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+header.header-main.nav-active {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo {
+    width: 256px;
+    height: 64px;
+    background-color: #ccc;
+}
+
+/***
+* NAVIGATION
+*/
+.navigation {
+    width: 100%;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation.active {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    height: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.navigation.active a {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation-button {
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: 2px solid aqua; /* changer couleur */
+    font-weight: 700;
+    font-size: 1rem;
+    align-self: flex-end;
+}
+/***
+* FIN NAVIGATION
+*/
+
+@media (min-width: 860px) {
+    header.header-main {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 128px;
+    }
+
+    .navigation {
+        width: calc(92px * 3);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navigation-button {
+        display: none;
+    }
+}
+/***
+* FIN HEADER
+*/
