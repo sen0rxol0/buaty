@@ -1,9 +1,10 @@
 /**
 * COULEURS ?
-* principale: #49c18b, rgb(73,193,139) color description : Moderate cyan - lime green.
-* secondaire: #c14f49 color description : Moderate red.
+* principale: #c14f49, rgb(193,79,73) : color description : Moderate red. 
+* secondaire: #49c18b, rgb(73,193,139) : color description : Moderate cyan - lime green.
+* alt secondaire: #49bbc1, rgb(73,187,193) : color description : Moderate cyan.
 * textes:
-* 
+*
 */
 
 * {
@@ -31,7 +32,9 @@ h1, h2, h3, h4 {
 */
 header.header-main {
     width: 100%;
-    background-color: rgba(73,193,139,.6);
+    /* background-color: rgba(73,193,139,1); */
+    /* background-color: #49bbc1; */
+    /* background-image: linear-gradient(to bottom, rgb(73,193,139), transparent); */
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -66,12 +69,12 @@ header.header-main.nav-active {
 .navigation a {
     text-decoration: none;
     height: 48px;
+    line-height: 48px;
     padding: 0 16px;
     border-bottom: 2px solid rgba(241,241,241,.4);
-    color: #f1f1f1;
-    line-height: 48px;
+    color: #000;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .navigation a:hover {
     border-color: #f1f1f1;
@@ -162,6 +165,7 @@ main.container-main {
     padding: 0 8px;
     padding-top: 64px;
     position: relative;
+    /* color: #f1f1f1; */
     text-shadow: 3px 3px 12px #000;
 }
 
@@ -174,11 +178,12 @@ main.container-main {
     background-repeat: no-repeat;
     /* background-blend-mode: overlay; */
     position: absolute;
+    /* top: -64px; */
     top: 0;
     right: 0;
     z-index: -1;
-    opacity: 0.7;
-    /* filter: blur(3px); */
+    /* filter: grayscale(1); */
+    filter: opacity(55%);
 }
 
 .hero h1 {
