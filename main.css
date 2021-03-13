@@ -132,7 +132,7 @@ header.header-main.nav-active {
 }
 @media (min-width: 1439px) {
     header.header-main {
-        padding: 0 320px;
+        /* padding: 0 320px; */
     }
 }
 @media (min-width: 1599px) {
@@ -188,7 +188,7 @@ main.container-main {
 }
 
 .hero h3 {
-    margin-top: 4em;
+    margin: 4em 0 2em;
     font-size: 1.6rem;
 }
 
@@ -216,7 +216,7 @@ main.container-main {
 }
 
 .team h2 {
-    margin-top: 0;
+    margin: 0 0 3em;
     font-size: 1.8rem;
     text-align: center;
 }
@@ -270,13 +270,67 @@ main.container-main {
 /***
 * FIN TEAM SECTION
 */
+/***
+* NEWS SECTION
+*/
+
+.news {
+    padding: 64px 128px;
+    background-image: linear-gradient(to top,#49c18b, transparent);
+}
+
+.news h2 {
+    margin: 0 0 3em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.news .news-list {
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: 12px -12px 2px 1px rgba(73,193,139.2);
+}
+
+.news-list .news-item {
+    max-width: 320px;
+}
+
+.news-item .news-fig {
+    margin: 0;
+    filter: blur(3px);
+    transition: filter 300ms ease;
+}
+
+.news-item:hover .news-fig {
+    filter: blur(0px);
+}
+
+.news-item .news-fig img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.news-item .news-title {
+
+}
+
+.news-item .news-desc {
+
+}
+
+.news-item .news-link {
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
 
 @media (min-width: 599px) {
 }
 @media (min-width: 719px) {
     .team .teams {
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 @media (min-width: 839px) {
@@ -286,6 +340,9 @@ main.container-main {
 
     .team {
         padding: 64px 48px;
+    }
+    .team .teams {
+        justify-content: space-between;
     }
 }
 @media (min-width: 959px) {
@@ -315,14 +372,14 @@ main.container-main {
         padding: 64px 256px;
     }
 }
-@media (min-width: 1439px) {
+/* @media (min-width: 1439px) {
     .hero {
         padding: 128px 320px 0;
     }
     .team {
         padding: 64px 320px;
     }
-}
+} */
 @media (min-width: 1599px) {
     .hero {
         padding: 128px 384px 0;
