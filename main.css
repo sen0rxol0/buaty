@@ -49,7 +49,11 @@ header.header-main.nav-active {
 .logo {
     width: 256px;
     height: 64px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
+}
+
+.logo img {
+    max-height: 100%;
 }
 
 /***
