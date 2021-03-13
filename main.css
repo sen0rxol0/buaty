@@ -99,7 +99,7 @@ header.header-main.nav-active {
     header.header-main {
         display: flex;
         justify-content: space-between;
-        padding: 0 128px;
+        padding: 0 48px;
     }
 
     .navigation {
@@ -114,6 +114,33 @@ header.header-main.nav-active {
         display: none;
     }
 }
+@media (min-width: 959px) {
+    header.header-main {
+        padding: 0 64px;
+    }
+    
+}
+@media (min-width: 1023px) {
+    header.header-main {
+        padding: 0 128px;
+    }
+}
+@media (min-width: 1279px) {
+    header.header-main {
+        padding: 0 256px;
+    }
+}
+@media (min-width: 1439px) {
+    header.header-main {
+        padding: 0 320px;
+    }
+}
+@media (min-width: 1599px) {
+    header.header-main {
+        padding: 0 384px;
+    }
+}
+
 /***
 * FIN HEADER
 */
@@ -249,7 +276,7 @@ main.container-main {
 @media (min-width: 719px) {
     .team .teams {
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 @media (min-width: 839px) {
@@ -259,10 +286,6 @@ main.container-main {
 
     .team {
         padding: 64px 48px;
-    }
-    .team .teams {
-        flex-flow: row wrap;
-        justify-content: space-between;
     }
 }
 @media (min-width: 959px) {
@@ -283,7 +306,39 @@ main.container-main {
         padding: 64px 128px;
     }
 }
+@media (min-width: 1279px) {
+    .hero {
+        padding: 128px 256px 0;
+    }
+
+    .team {
+        padding: 64px 256px;
+    }
+}
+@media (min-width: 1439px) {
+    .hero {
+        padding: 128px 320px 0;
+    }
+    .team {
+        padding: 64px 320px;
+    }
+}
+@media (min-width: 1599px) {
+    .hero {
+        padding: 128px 384px 0;
+    }
+    .team {
+        padding: 64px 384px;
+    }
+    .teams .team-profile {
+        margin: 0 16px; 
+    }
+}
+@media (mix-width: 1600px) and (max-width: 1919) {
+    .teams .team-profile {
+        margin: 0 32px; 
+    }
+}
 /***
 * FIN MAIN
 */
-
