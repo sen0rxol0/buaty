@@ -32,9 +32,6 @@ h1, h2, h3, h4 {
 */
 header.header-main {
     width: 100%;
-    /* background-color: rgba(73,193,139,1); */
-    /* background-color: #49bbc1; */
-    /* background-image: linear-gradient(to bottom, rgb(73,193,139), transparent); */
     display: flex;
     justify-content: space-between;
     padding: 8px;
@@ -49,7 +46,6 @@ header.header-main.nav-active {
 .logo {
     width: 256px;
     height: 64px;
-    /* background-color: #ccc; */
 }
 
 .logo img {
@@ -71,17 +67,17 @@ header.header-main.nav-active {
 }
 
 .navigation a {
-    text-decoration: none;
     height: 48px;
     line-height: 48px;
     padding: 0 16px;
-    border-bottom: 2px solid rgba(241,241,241,.4);
-    color: #000;
+    border-bottom: 2px solid rgba(73,187,193,.5);
+    text-decoration: none;
     font-weight: 700;
     font-size: 1.2rem;
+    color: #000;
 }
 .navigation a:hover {
-    border-color: #f1f1f1;
+    border-color: rgb(73,187,193);
 }
 
 .navigation.active a {
@@ -93,7 +89,7 @@ header.header-main.nav-active {
     width: 64px;
     height: 64px;
     background-color: transparent;
-    border: 2px solid aqua; /* changer couleur */
+    border: 2px solid rgb(73,187,193);
     font-weight: 700;
     font-size: 1rem;
     align-self: flex-end;
@@ -216,7 +212,6 @@ main.container-main {
 /***
 * FIN HERO SECTION
 */
-
 /***
 * TEAM SECTION
 */
@@ -260,7 +255,7 @@ main.container-main {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     display: inline-block;
-    filter: grayscale(1);
+    box-shadow: -12px -12px 2px 1px #49bbc1;
 }
 .team-profile span:hover {
     /* filter: grayscale(0); */
@@ -269,6 +264,7 @@ main.container-main {
 .team-profile img {
     max-width: 100%;
     width: 100%;
+    filter: grayscale(1);
 }
 
 .team-profile:nth-child(3) img {
@@ -282,7 +278,6 @@ main.container-main {
 /***
 * NEWS SECTION
 */
-
 .news {
     padding: 64px 128px;
     background-image: linear-gradient(to top,#49c18b, transparent);
@@ -297,7 +292,8 @@ main.container-main {
 .news .news-list {
     display: flex;
     flex-flow: row nowrap;
-    box-shadow: 12px -12px 2px 1px rgba(73,193,139.2);
+    justify-content: space-between;
+    box-shadow: 12px -12px 2px 1px rgb(73,193,139);
 }
 
 .news-list .news-item {
@@ -329,9 +325,70 @@ main.container-main {
 
 .news-item .news-link {
     width: 100%;
+    height: 48px;
+    line-height: 48px;
     text-decoration: none;
     text-transform: uppercase;
+    text-align: right;
+    font-weight: 700;
+    /* font-size: 1.2rem; */
+    color: #000;
     display: inline-block;
+    border-bottom: 2px solid rgba(193,79,73,.5);
+}
+
+.news-item .news-link:hover {
+    border-color: rgb(193,79,73);
+}
+/***
+* FIN NEWS SECTION
+*/
+/***
+* CONTACT SECTION
+*/
+.contact {
+    padding: 64px 128px;
+}
+
+.contact h2 {
+    margin: 0 0 3em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contact-form .contact-form-col {
+    max-width: 360px;
+    width: 100%;
+    margin-bottom: 32px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+.contact-form label {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.contact-form input {
+    width: 100%;
+    height: 2em;
+    padding: 4px 6px;
+    font-size: 0.9rem;
+}
+.contact-form textarea {
+    width: 100%;
+    padding: 4px 6px;
+    font-size: 0.9rem;
+}
+.contact-form button {
+    height: 48px;
+    width: 156px;
+    text-transform: uppercase;
 }
 
 @media (min-width: 599px) {
@@ -407,4 +464,35 @@ main.container-main {
 }
 /***
 * FIN MAIN
+*/
+/***
+* FOOTER
+*/
+footer.footer-main {
+
+}
+
+.footer-main .footer-navigation {
+
+}
+
+.footer-navigation a {
+
+}
+
+.footer-main .footer-links {
+
+}
+
+.footer-links .footer-links-title {
+
+}
+
+.footer-links .footer-link {
+
+}
+
+
+/***
+* FIN FOOTER
 */
