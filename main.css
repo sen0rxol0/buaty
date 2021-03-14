@@ -53,7 +53,7 @@ header.header-main.nav-active {
 }
 
 /***
-* NAVIGATION
+* NAVIGATION HEADER
 */
 .navigation {
     width: 100%;
@@ -95,7 +95,7 @@ header.header-main.nav-active {
     align-self: flex-end;
 }
 /***
-* FIN NAVIGATION
+* FIN NAVIGATION HEADER
 */
 
 @media (min-width: 839px) {
@@ -143,11 +143,9 @@ header.header-main.nav-active {
         padding: 0 384px;
     }
 }
-
 /***
 * FIN HEADER
 */
-
 /***
 * MAIN
 */
@@ -157,7 +155,7 @@ main.container-main {
 }
 
 /***
-* HERO SECTION
+* HERO SECTION MAIN
 */
 .hero {
     width: 100%;
@@ -210,10 +208,10 @@ main.container-main {
     bottom: 0;
 }
 /***
-* FIN HERO SECTION
+* FIN HERO SECTION MAIN
 */
 /***
-* TEAM SECTION
+* TEAM SECTION MAIN
 */
 .team {
     padding: 64px 8px;
@@ -273,13 +271,13 @@ main.container-main {
     margin-left: -20%;
 }
 /***
-* FIN TEAM SECTION
+* FIN TEAM SECTION MAIN
 */
 /***
-* NEWS SECTION
+* NEWS SECTION MAIN
 */
 .news {
-    padding: 64px 128px;
+    padding: 64px 8px;
     background-image: linear-gradient(to top,#49c18b, transparent);
 }
 
@@ -341,13 +339,13 @@ main.container-main {
     border-color: rgb(193,79,73);
 }
 /***
-* FIN NEWS SECTION
+* FIN NEWS SECTION MAIN
 */
 /***
-* CONTACT SECTION
+* CONTACT SECTION MAIN
 */
 .contact {
-    padding: 64px 128px;
+    padding: 64px 8px;
 }
 
 .contact h2 {
@@ -388,8 +386,17 @@ main.container-main {
 .contact-form button {
     height: 48px;
     width: 156px;
+    font-size: 1rem;
     text-transform: uppercase;
 }
+.contact-form button svg {
+    width: 1em;
+    height: 1em;
+    color: inherit;
+}
+/***
+* FIN CONTACT SECTION MAIN
+*/
 
 @media (min-width: 599px) {
 }
@@ -410,6 +417,14 @@ main.container-main {
     .team .teams {
         justify-content: space-between;
     }
+
+    .news {
+        padding: 64px 48px;
+    }
+
+    .contact {
+        padding: 64px 48px;
+    }
 }
 @media (min-width: 959px) {
     .hero {
@@ -417,6 +432,14 @@ main.container-main {
     }
 
     .team {
+        padding: 64px;
+    }
+
+    .news {
+        padding: 64px;
+    }
+
+    .contact {
         padding: 64px;
     }
 }
@@ -428,6 +451,14 @@ main.container-main {
     .team {
         padding: 64px 128px;
     }
+
+    .news {
+        padding: 64px 128px;
+    }
+
+    .contact {
+        padding: 64px 128px;
+    }
 }
 @media (min-width: 1279px) {
     .hero {
@@ -435,6 +466,14 @@ main.container-main {
     }
 
     .team {
+        padding: 64px 256px;
+    }
+
+    .news {
+        padding: 64px 256px;
+    }
+
+    .contact {
         padding: 64px 256px;
     }
 }
@@ -456,6 +495,14 @@ main.container-main {
     .teams .team-profile {
         margin: 0 16px; 
     }
+
+    .news {
+        padding: 64px 384px;
+    }
+
+    .contact {
+        padding: 64px 384px;
+    }
 }
 @media (mix-width: 1600px) and (max-width: 1919) {
     .teams .team-profile {
@@ -469,7 +516,9 @@ main.container-main {
 * FOOTER
 */
 footer.footer-main {
-
+    padding: 64px 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-main .footer-navigation {
@@ -477,22 +526,50 @@ footer.footer-main {
 }
 
 .footer-navigation a {
-
+    text-decoration: none;
+    color: #000;
 }
 
 .footer-main .footer-links {
-
+    /* display: flex; */
 }
 
 .footer-links .footer-links-title {
-
+    margin-top: 0;
 }
 
 .footer-links .footer-link {
-
+    width: 48px;
+    height: 48px;
+    display: inline-block;
 }
-
-
+@media (min-width: 719px) {}
+@media (min-width: 839px) {
+    footer.footer-main {
+        padding: 64px 48px;
+    }
+}
+@media (min-width: 959px) {
+    footer.footer-main {
+        padding: 64px;
+    }
+}
+@media (min-width: 1023px) {
+    footer.footer-main {
+        padding: 64px 128px;
+    }
+}
+@media (min-width: 1279px) {
+    footer.footer-main {
+        padding: 64px 256px;
+    }
+}
+@media (min-width: 1599px) {
+    footer.footer-main {
+        padding: 64px 384px;
+    }
+}
+/* @media (mix-width: 1600px) and (max-width: 1919) {} */
 /***
 * FIN FOOTER
 */
