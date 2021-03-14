@@ -102,7 +102,7 @@ header.header-main.nav-active {
     header.header-main {
         display: flex;
         justify-content: space-between;
-        padding: 0 48px;
+        padding: 8px 48px;
     }
 
     .navigation {
@@ -119,28 +119,28 @@ header.header-main.nav-active {
 }
 @media (min-width: 959px) {
     header.header-main {
-        padding: 0 64px;
+        padding: 8px 64px;
     }
     
 }
 @media (min-width: 1023px) {
     header.header-main {
-        padding: 0 128px;
+        padding: 8px 128px;
     }
 }
 @media (min-width: 1279px) {
     header.header-main {
-        padding: 0 256px;
+        padding: 8px 256px;
     }
 }
 @media (min-width: 1439px) {
     header.header-main {
-        /* padding: 0 320px; */
+        /* padding: 8px 320px; */
     }
 }
 @media (min-width: 1599px) {
     header.header-main {
-        padding: 0 384px;
+        padding: 8px 384px;
     }
 }
 /***
@@ -159,7 +159,7 @@ main.container-main {
 */
 .hero {
     width: 100%;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 80px);
     padding: 0 8px;
     padding-top: 64px;
     position: relative;
@@ -176,7 +176,6 @@ main.container-main {
     background-repeat: no-repeat;
     /* background-blend-mode: overlay; */
     position: absolute;
-    /* top: -64px; */
     top: 0;
     right: 0;
     z-index: -1;
