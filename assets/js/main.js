@@ -9,6 +9,26 @@ function initNavigationToggle() {
     });
 }
 
+// function headerChangesOnScroll() {
+//     let header = document.querySelector('header.header-main'),
+//         rect = header.getBoundingClientRect();
+
+//     let onScroll = () => {
+//         if (window.scrollY > rect.height) {
+//             header.classList.add('active-scroll');
+//         } else {
+//             if (!header.classList.contains('extended')) {
+//                 header.classList.remove('active-scroll');
+//             }
+//         }
+//     };
+//     if (window.scrollY > rect.height) {
+//         header.classList.add('active-scroll');
+//     }
+
+//     window.addEventListener('scroll', onScroll);
+// }
+
 function onLinkClickScroll() {
     var dur = 1000;
     var target = this.hash.slice(1),
