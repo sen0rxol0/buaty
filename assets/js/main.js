@@ -3,7 +3,7 @@
 function initNavigationToggle() {
     const menuButton = document.querySelector('button[data-menu]');
     menuButton.addEventListener('click', (ev) => {
-        ev.target.classList.toggle('toggled');
+        menuButton.classList.toggle('toggled');
         document.querySelector('header.header-main').classList.toggle('nav-active');
         document.querySelector('nav.navigation').classList.toggle('active');
     });
