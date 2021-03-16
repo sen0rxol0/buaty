@@ -31,6 +31,10 @@ h1, h2, h3, h4 {
     font-family: 'Cormorant Unicase', serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /***
 * HEADER
@@ -77,9 +81,8 @@ header.header-main.nav-active {
     height: 48px;
     line-height: 48px;
     padding: 0 16px;
-    text-decoration: none;
     font-size: 1.2rem;
-    color: inherit;
+    transition: font-weight 300ms ease;
 }
 .navigation a:hover {
     font-weight: 600;
@@ -228,9 +231,7 @@ main.container-main {
 }
 
 .hero a {
-    text-decoration: none;
     opacity: 0.6;
-    color: inherit;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -278,9 +279,7 @@ main.container-main {
 }
 
 .team-profile figcaption a {
-    text-decoration: none;
     font-style: italic;
-    color: inherit;
 }
 
 .team-profile span {
@@ -337,10 +336,7 @@ main.container-main {
     line-height: 48px;
     padding: 0 16px;
     display: inline-block;
-    text-decoration: none;
     text-transform: uppercase;
-    /* font-weight: 600; */
-    color: inherit;
     border-bottom: 2px solid rgba(193,79,73,.3);
     transition: border-color 300ms ease;
 }
@@ -652,9 +648,8 @@ footer.footer-main {
     width: 92px;
     height: 48px;
     line-height: 48px;
-    text-decoration: none;
-    color: inherit;
     display: block;
+    transition: font-weight 300ms ease;
 }
 
 .footer-navigation a:hover {
@@ -675,6 +670,11 @@ footer.footer-main {
     margin-left: 16px;
     display: inline-block;
     opacity: 0.3;
+    transition: opacity 300ms ease;
+}
+
+.footer-links .footer-link:hover {
+    opacity: 1;
 }
 @media (min-width: 719px) {
     .footer-main .footer-navigation {
