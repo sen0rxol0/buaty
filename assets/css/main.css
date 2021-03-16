@@ -51,6 +51,7 @@ header.header-main.nav-active {
 .logo {
     width: 256px;
     height: 48px;
+    margin: auto 0;
 }
 
 .logo img {
@@ -105,6 +106,7 @@ header.header-main.nav-active {
 }
 
 .navigation-button svg {
+    fill: #000;
 }
 
 .navigation-button.toggled svg#icon-menu {
@@ -422,8 +424,8 @@ main.container-main {
 }
 
 .contact .contact-form {
-    padding: 48px 0;
-    border-radius: 16px;
+    padding: 48px 24px;
+    border-radius: 8px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -540,6 +542,10 @@ main.container-main {
     .contact {
         padding: 64px 48px;
     }
+
+    /* .contact .contact-form {
+        padding: 48px 0;
+    } */
 }
 @media (min-width: 959px) {
     .hero {
